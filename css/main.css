@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.top_menu{
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+    padding: 0;
+    float: right;
+    margin: 0 360px 0 0;
+    text-align: left;
+    width: 350px;
+}
+
+.top_menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.top_menu ul li{
+    float: left;
+    margin-right: 10px;
+}
+
+.top_menu a{
+    max-width: 40px;
+    word-spacing: 30px;
+    text-decoration: none;
+    color: rgb(11, 32, 63);
+}
+
+.logo_n_menu{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 360px;
+    max-width: 1200px;
+    height: auto;
+}
+
+.joen_logo img{
+    padding-top: 101px;
+    max-width: 280px;
+    height: auto;
+}
+
+.logo_n_menu .top_icon{
+    margin: 0 108px 0 108px;
+}
+
+.search_bar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: 125px;
+    top: 100px;
+    width: 350px;
+}
+
+.search_bar input{
+    height: 50px;
+    width: 100%;
+    border: 5px solid #AFC4E7;
+    border-radius: 15px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.search_bar input:focus{
+    outline: none;
+}
+
+.search_bar img{
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 18px;
+    right: 8px;
+    margin: 0;
+}
+
+.top_icon{
+    display: flex;
+    text-align: center;
+    margin-left: 250px;
+    padding-top: 109px;
+    font-size: 14px;
+}
+
+.top_icon img{
+    display: block;
+    margin: auto;
+    padding: 0 20px;
+    width: 44px;
+    height: 43px;
+}
+
+.category_menu{
+    margin-top: 40.7px ;
+    text-align: center;
+}
+
+.category_menu ul, li{
+    list-style: none;
+}
+
+.category_menu ul li a{
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+}
+.category_menu .dep1{
+    font-size: 0;
+}
+
+.category_menu .dep1 > li{
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    background: none;
+    text-align: center;
+    font-size: 21px;
+}
+.category_menu .dep2 {
+    display: none;
+}
+
+.category_menu a:hover{
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.category_menu .dep1 > li:hover > .dep2{
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    text-align: left;
+    display: block;
+    z-index: 2;
+    background-color: black;
+    color: white;
+}
+
+.banner{
+    margin-top:26.3px ;
+}
+
+.banner input[id*="slide"]{
+    display: none;
+}
+
+.banner .slidewrap{
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.banner .slidelist{
+    white-space: nowrap;
+    font-size: 0;
+}
+.banner .slidelist>li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+.banner .slidelist>li>a{
+    display: block;
+    position: relative;
+}
+.banner .slidelist>li>a img{
+    width: 100%;
+
+}
+.banner .slidelist label{
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+.banner .slidelist .left{
+    left: 30px;
+    background: url(/images/left.png) center center / 100% no-repeat;
+}
+.banner .slidelist .right{
+    right: 30px;
+    background: url(/images/right.png) center center / 100% no-repeat;
+}
+
+.banner input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1%);}
+.banner input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-101%);}
+.banner input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-201%);}
+.banner input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-301%);}
+
+.container_1{
+    display: flex;
+    margin: 65px auto;
+    width: 1200px;
+    height: 450px;
+}
+
+.container_1 ul li{
+    line-height: 60px;
+}
+
+.container_1 ul li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.content_2 h1{
+    margin-left: 71.4px;
+    text-align: left;
+}
+.content_2 .dep2{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 71.4px;
+    text-align: center;
+}
+.content_2 .dep2 img{
+    display: block;
+    margin: auto;
+    margin-left: 41px;
+    max-width: 200px;
+    height: 150px;
+}
+.content_2 .dep2 .dep3{
+    width: 227px;
+    text-align: center;
+    margin: 41px 11px;
+}
+
+.container_2{
+    margin: auto;
+    display: flex;
+    width: 1920px;
+    height: 968px;
+    background-color: #F9F9F9;
+}
+.container_2 .con1 {
+    margin: auto;
+    background-color: #F9F9F9;
+    width: 1200px;
+}
+.container_2 .con1 h1{
+    text-align: center;
+}
+
+.container_2 .con1 .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.container_2 .con1 .items .item{
+    width: 250px;
+    height: 380px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.container_2 .con1 .items .item a{
+    text-decoration: none;
+    color: black;
+}
+
+.container_2 .con1 .items img{
+    display: block;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.container_2 .con1 .items h1{
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+}
+
+.container_2 .con1 .items .item .textbox{
+    display: flex;
+    float: left;
+    margin: 3px 5px 0 0;
+    font-weight: 500;
+    background-color: #707070;
+    border-radius: 20px;
+}
+
+.container_2 .con1 .items .item .textbox p{
+    font-size: 12px;
+    margin: 3px 13px;
+    color: white;
+}
+
+footer {
+    background-color: #DFDFDF;
+    width: 1920px;
+    height: 332px;
+}
+footer .company {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+footer .company .company_info{
+    margin-top: 62px;
+    margin-left: 370px;
+}
+footer .company .company_info .info a{
+    text-decoration: none;
+    margin: 0 21px 0 0;
+    color: black;
+}
+footer .company .company_info .co_info img{
+    display: block;
+    float: left;
+}
+footer .company .company_info .co_info p{
+    padding: 10px 0 0 200px;
+    line-height: 28px;
+}
+
+
+footer .company .company_callcenter{
+    margin-right: 360px;
+}
+
+footer .company .company_callcenter h1{
+    font-size: 18px;
+    font-weight:400;
+}
+footer .company .company_callcenter h1 span{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+footer .company .company_callcenter img{
+    max-width: 40px;
+    height: auto;
+}
